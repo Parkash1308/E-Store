@@ -13,7 +13,7 @@ body {
 
 :root{
     --primary:indianred;
-    --secondary: rgap(15,10,29,0.849);
+    --secondary: rgba(15,10,29,0.849);
     --light:#2f3640;
 }
 header {
@@ -185,6 +185,7 @@ header {
 /*================New Arrival ===============*/
 .latest {
     padding: 50px 100px;
+    flex-wrap: wrap;
 }
 .product_intro {
     text-align: center;
@@ -208,6 +209,7 @@ header {
 .card-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 4rem 0;
@@ -308,5 +310,130 @@ footer p {
 }
 
 footer i {
-    margin: 0px 5px;
+    margin: 0px 5px; 
 }
+
+@media only screen and (max-width:769px) {
+    .nav1{
+        position: relative;         
+        z-index: 2;
+        background-color: white;      
+    }
+   .nav1 .right i{
+        font-size: 20px;
+        margin: 0px -2px;
+        padding: 0px 5px;
+        color: black;
+
+   }
+   .nav1 .right{
+    margin-right: -20px;
+   }
+   .nav1 .left {
+    font-size: 15px;
+    letter-spacing: -0.023rem;
+    margin-left: -1rem;
+    margin-top: 10px; 
+   }
+   .nav2{
+        width: 100%;
+       height: 80px;
+       
+   }
+   .nav2 .nav2-left{
+        margin-top: 20px;
+        margin-left: 5px;
+      
+   }
+   
+   .nav2 .nav2-left i{
+        font-size: 15px;
+        
+   }
+   
+   .nav2 .nav2-center {
+        margin-left: 5px;        
+        margin-top: 20px;
+   }
+   .nav2 .nav2-center h1{
+        font-size: 10px;
+        font-weight: bold;
+   }
+
+   .nav2 .nav2-center p{
+        margin-top: 13px;
+        font-size: 10px;
+
+   }
+   
+   .nav3{
+        display: none;
+   }
+    .featured{
+     background-attachment: fixed;
+     width: 100%;
+     height: 50vh;
+     background-size: 100%;
+
+   }
+   .latest {
+    padding: 0px 80px;
+}
+.product_intro {
+    text-align: center;
+}
+.product_intro h1 {
+    color: var(--primary);
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product_intro h1 span{
+
+    color: black ;
+}
+
+.product_intro p{
+    color: gray;
+    margin: 15px 0;
+}
+
+.card-container {
+    
+    margin: 2rem 0;
+    cursor: pointer;
+    
+    
+}
+.card-container .card{
+    flex-basis: 100%;
+    padding: 0.8rem;
+    position: relative;
+    text-align: center;
+   
+
+}
+.trends {
+    padding: 20px 50px;
+    background-color: rgba(0,0,0,0.2);
+    
+}
+
+  .trends .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+  }
+  footer div {
+    flex-basis: 50% ;
+    margin: 10px 0px;
+}
+
+
+   
+   
+   
+
+}
+
